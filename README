@@ -6,6 +6,11 @@ TODO:
 -implement config file
 -add more useful commands
 
+Dependencies:
+    -python
+    -mpc
+    -python modules: pylast, baker (these can be obtained through python's easyinstall)
+
 Unless otherwise stated, all commands operate in the context of mpd and last.fm.
 
 Commands:
