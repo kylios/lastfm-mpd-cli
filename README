@@ -1,0 +1,32 @@
+mpdlastctl - various command line utilities for controlling last.fm and mpd
+
+author: Kyle Racette
+
+TODO:
+-implement config file
+-add more useful commands
+
+Unless otherwise stated, all commands operate in the context of mpd and last.fm.
+
+Commands:
+
+    love - loves the currently playing track
+    (see TODO)
+
+Arguments:
+
+    --mpdhostname - the server mpd runs on. (Optional: defaults to localhost)
+    --mpdport - the port mpd listens on. (Optional: defaults to 6600)
+    --lastfmusername - your last.fm username
+    --lastfmpassword - your last.fm password
+
+    All arguments can be specified in a configuration file as well, in the form
+    of:
+        variable = value
+    (see TODO)
+
+Examples:
+
+    mpdlastctl.py love --lastfmusername=iamalastfmuser --lastfmpassword=mysecurelastfmpassword
+
+
