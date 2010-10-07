@@ -1,1 +1,44 @@
-lastfm-mpd-cli
+<b>lastfm-mpd-cli</b> is a program to control various functions on Last.fm
+through the command line.  All commands operate on the current song playing in
+mpd (Music Player Daemon).  Current available commands:
+<ul>
+    <li>love - Reads the current track from mpd and 'loves' it on Last.fm<p>
+        --lastfmusername=<username>    Your last.fm username
+        --lastfmpassword=<md5(password)>    The md5 hash of your Last.fm
+        password
+        --mpdpassword=<password>    Your mpd server's password
+        --mpdhostname=<hostname>    The machine your server runs on
+        --mpdport=<port>    The port your server listens on
+    </li>
+</ul>
+
+All parameters can be specified in a configuration file as well, but will be
+overrided if they are specified at the command line.  The global configuration
+can be found at /etc/lastfm-mpd-cli.rc .  The global configuration is
+overridden if the program finds a local configuration file at
+$HOME/.lastfm-mpd-clirc.
+
+A public git repository for the source code can be found at <a
+    href="http://github.com/morendi/lastfm-mpd-cli">http://github.com/morendi/lastfm-mpd-cli</a>.
+Alternately, you can download a specific version below:
+
+<table>
+    <th>
+        <td>Version</td>
+        <td>Link</td>
+        <td>md5</td>
+    </th>
+    <tr>
+        <td>0.02</td>
+        <td><a href="http://morendi.github.com/lastfm-mpd-cli/lastfm-mpd-cli-0.02.tar.gz">http://morendi.github.com/lastfm-mpd-cli-0.02.tar.gz</a></td>
+        <td>278349b33195e053f4bc63fc3ac187e2</td>
+    </tr>
+    <tr>
+        <td>0.01</td>
+        <td><a href="http://morendi.github.com/lastfm-mpd-cli/lastfm-mpd-cli-0.01.tar.gz">http://morendi.github.com/lastfm-mpd-cli-0.01.tar.gz</a></td>
+        <td>d7aa1186dbf5ca83bdbcc13df50cfa5d</td>
+    </tr>
+</table>
+
+Author: Kyle Racette <kracette at gmail dot com>
+
