@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: UTF-8 -*-
 
 """
 This program is free software: you can redistribute it and/or modify
@@ -13,7 +14,6 @@ See the GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
-
 #Author: Kyle Racette (kracette@gmail.com)
 
 import baker
@@ -161,6 +161,7 @@ def love(lastfmusername = None, lastfmpassword = None, mpdpassword = None,
         error("Could not connect to last.fm")
 
     track = mpd_get_current()
+    track = (track[0].decode('utf-8'), track[1].decode('utf-8'))
     if track == None:
         error("Could not get track data from mpd")
     lastfm_track = lastfm_get_track(lastfmconn, track)
